@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spectrum - Concept Fashion Store</title>
+<meta name="description" content="The Spectrum is a vibrant concept e-commerce template with a pure white canvas, color-block hero, flash-color catalog, and scroll-reactive geometry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tooplate-2163-spectrum-style.css">
+<!--
+
+Tooplate 2163 Spectrum
+
+https://www.tooplate.com/view/2163-spectrum
+
+Free HTML CSS Template
+
+-->
+</head>
+<body>
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+    <div class="header-inner">
+        <a href="#" class="logo">SPECTRUM<b>.</b></a>
+        <nav class="main-nav">
+            <a href="#catalog">Shop</a>
+            <a href="#details">Details</a>
+            <a href="#contact">About</a>
+            <a href="#" class="cart-pill" aria-label="Cart, 0 items">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M4 5 H7 L9.5 16 H18 L20 8 H8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="9.5" cy="20" r="1.5" fill="#FFFFFF" stroke="none"/>
+                    <circle cx="17" cy="20" r="1.5" fill="#FFFFFF" stroke="none"/>
+                </svg>
+                <span class="cart-count">0</span>
+            </a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="#catalog">Shop</a>
+    <a href="#details">Details</a>
+    <a href="#contact">About</a>
+    <a href="#">Cart (0)</a>
+</nav>
+
+<!-- Section 1: Hero Color-Block Split -->
+<section class="hero">
+    <div class="hero-left">
+        <p class="hero-eyebrow">Drop 04 / Out Now</p>
+        <h1>SPECTRUM<em>.</em>26</h1>
+        <p class="hero-desc">A capsule of street-ready essentials built in full color. No muted tones, no apologies.</p>
+        <a href="#catalog" class="hero-cta">Shop the drop</a>
+    </div>
+    <div class="hero-right" id="heroStage">
+        <span class="hero-badge">NEW SEASON</span>
+        <div class="hero-carousel" id="heroCarousel">
+
+            <div class="hero-slide active" data-accent="#00FA9A">
+                <div class="hero-float">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Velocity Runner sneaker">
+                        <path d="M20 130 L25 95 Q28 78 48 80 L78 84 Q92 86 104 74 L128 50 Q138 42 146 52 L150 64 L138 78 L150 82 Q176 90 184 112 L188 126 Q190 138 178 140 L34 140 Q20 140 20 130 Z" fill="#111111"/>
+                        <path d="M28 140 L182 140 Q186 150 176 152 L34 152 Q24 152 28 140 Z" fill="#FF4500"/>
+                        <path d="M96 80 L110 66 L120 76 L106 90 Z" fill="#FF00FF"/>
+                        <circle cx="60" cy="112" r="5" fill="#00FA9A"/>
+                        <circle cx="84" cy="112" r="5" fill="#00FA9A"/>
+                        <circle cx="108" cy="112" r="5" fill="#00FA9A"/>
+                    </svg>
+                </div>
+                <div class="hero-caption">
+                    <h3>Velocity Runner</h3>
+                    <span>$148</span>
+                </div>
+            </div>
+
+            <div class="hero-slide" data-accent="#FF00FF">
+                <div class="hero-float">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Pulse Watch">
+                        <rect x="78" y="44" width="44" height="34" rx="7" fill="#111111"/>
+                        <rect x="78" y="122" width="44" height="34" rx="7" fill="#111111"/>
+                        <rect x="66" y="70" width="68" height="60" rx="14" fill="#FF4500"/>
+                        <circle cx="100" cy="100" r="17" fill="#00FA9A"/>
+                    </svg>
+                </div>
+                <div class="hero-caption">
+                    <h3>Pulse Watch</h3>
+                    <span>$210</span>
+                </div>
+            </div>
+
+            <div class="hero-slide" data-accent="#FF4500">
+                <div class="hero-float">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Sport Cap">
+                        <path d="M46 116 Q46 60 100 60 Q154 60 154 116 L46 116 Z" fill="#00FA9A"/>
+                        <path d="M150 116 L188 126 L184 140 L150 132 Z" fill="#111111"/>
+                        <rect x="70" y="88" width="60" height="10" rx="5" fill="#FF00FF"/>
+                    </svg>
+                </div>
+                <div class="hero-caption">
+                    <h3>Sport Cap</h3>
+                    <span>$44</span>
+                </div>
+            </div>
+
+            <div class="hero-slide" data-accent="#00FA9A">
+                <div class="hero-float">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Chroma Shades">
+                        <rect x="36" y="84" width="56" height="44" rx="14" fill="#FF4500"/>
+                        <rect x="108" y="84" width="56" height="44" rx="14" fill="#FF00FF"/>
+                        <line x1="92" y1="98" x2="108" y2="98" stroke="#111111" stroke-width="8"/>
+                    </svg>
+                </div>
+                <div class="hero-caption">
+                    <h3>Chroma Shades</h3>
+                    <span>$68</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="hero-dots" id="heroDots" role="tablist" aria-label="Featured products"></div>
+    </div>
+</section>
+
+<!-- Section 2: Flash-Color Catalog -->
+<section class="catalog" id="catalog">
+    <div class="container">
+        <div class="section-head reveal">
+            <h2>The Catalog</h2>
+            <p>Hover to see true color</p>
+        </div>
+    </div>
+    <div class="catalog-scroll reveal">
+
+        <article class="product-card flash-magenta">
+            <div class="product-media">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="Runner sneaker">
+                    <path d="M14 80 L18 56 Q20 46 34 48 L56 52 Q66 54 74 46 L88 32 Q94 28 99 34 L101 44 L92 54 L110 60 Q116 66 116 76 Q116 84 106 84 L24 84 Q14 84 14 80 Z" fill="#FF4500"/>
+                    <path d="M18 84 L112 84 Q114 92 104 92 L24 92 Q14 92 18 84 Z" fill="#111111"/>
+                    <circle cx="44" cy="68" r="3.5" fill="#00FA9A"/>
+                    <circle cx="60" cy="68" r="3.5" fill="#00FA9A"/>
+                </svg>
+            </div>
+            <div class="product-info">
+                <h3>Velocity Runner</h3>
+                <span class="price">$148</span>
+                <button class="add-cart">Add to cart</button>
+            </div>
+        </article>
+
+        <article class="product-card flash-orange">
+            <div class="product-media">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="Tote bag">
+                    <path d="M34 44 L86 44 L94 100 L26 100 Z" fill="#FF00FF"/>
+                    <path d="M46 44 Q46 26 60 26 Q74 26 74 44" fill="none" stroke="#111111" stroke-width="5"/>
+                    <rect x="40" y="62" width="40" height="8" fill="#00FA9A"/>
+                </svg>
+            </div>
+            <div class="product-info">
+                <h3>Carry-All Tote</h3>
+                <span class="price">$92</span>
+                <button class="add-cart">Add to cart</button>
+            </div>
+        </article>
+
+        <article class="product-card flash-magenta">
+            <div class="product-media">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="Cap">
+                    <path d="M28 70 Q28 38 60 38 Q92 38 92 70 L28 70 Z" fill="#00FA9A"/>
+                    <path d="M88 70 L112 76 L110 84 L88 80 Z" fill="#111111"/>
+                    <rect x="42" y="52" width="36" height="6" rx="3" fill="#FF4500"/>
+                </svg>
+            </div>
+            <div class="product-info">
+                <h3>Sport Cap</h3>
+                <span class="price">$44</span>
+                <button class="add-cart">Add to cart</button>
+            </div>
+        </article>
+
+        <article class="product-card flash-orange">
+            <div class="product-media">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="Sunglasses">
+                    <rect x="20" y="50" width="34" height="26" rx="8" fill="#FF4500"/>
+                    <rect x="66" y="50" width="34" height="26" rx="8" fill="#FF00FF"/>
+                    <line x1="54" y1="58" x2="66" y2="58" stroke="#111111" stroke-width="5"/>
+                </svg>
+            </div>
+            <div class="product-info">
+                <h3>Chroma Shades</h3>
+                <span class="price">$68</span>
+                <button class="add-cart">Add to cart</button>
+            </div>
+        </article>
+
+        <article class="product-card flash-magenta">
+            <div class="product-media">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="Hoodie">
+                    <path d="M40 38 L60 30 L80 38 L92 56 L82 64 L78 56 L78 96 L42 96 L42 56 L38 64 L28 56 Z" fill="#FF4500"/>
+                    <path d="M52 38 Q60 50 68 38 L60 30 Z" fill="#111111"/>
+                    <rect x="54" y="70" width="12" height="20" rx="6" fill="#00FA9A"/>
+                </svg>
+            </div>
+            <div class="product-info">
+                <h3>Box-Fit Hoodie</h3>
+                <span class="price">$120</span>
+                <button class="add-cart">Add to cart</button>
+            </div>
+        </article>
+
+        <article class="product-card flash-orange">
+            <div class="product-media">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="Watch">
+                    <rect x="46" y="30" width="28" height="20" rx="4" fill="#111111"/>
+                    <rect x="46" y="70" width="28" height="20" rx="4" fill="#111111"/>
+                    <rect x="40" y="44" width="40" height="32" rx="8" fill="#FF00FF"/>
+                    <circle cx="60" cy="60" r="9" fill="#00FA9A"/>
+                </svg>
+            </div>
+            <div class="product-info">
+                <h3>Pulse Watch</h3>
+                <span class="price">$210</span>
+                <button class="add-cart">Add to cart</button>
+            </div>
+        </article>
+
+        <article class="product-card flash-magenta">
+            <div class="product-media">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="Backpack">
+                    <rect x="36" y="44" width="48" height="52" rx="14" fill="#00FA9A"/>
+                    <path d="M46 48 Q46 30 60 30 Q74 30 74 48" fill="none" stroke="#111111" stroke-width="5"/>
+                    <rect x="48" y="62" width="24" height="22" rx="5" fill="#FF4500"/>
+                </svg>
+            </div>
+            <div class="product-info">
+                <h3>Day Pack</h3>
+                <span class="price">$98</span>
+                <button class="add-cart">Add to cart</button>
+            </div>
+        </article>
+
+        <article class="product-card flash-orange">
+            <div class="product-media">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="Socks">
+                    <path d="M48 30 L66 30 L66 64 L82 80 Q86 86 80 90 L66 96 Q58 98 54 90 L48 76 Z" fill="#FF00FF"/>
+                    <rect x="48" y="30" width="18" height="10" fill="#111111"/>
+                    <rect x="50" y="48" width="14" height="6" fill="#00FA9A"/>
+                </svg>
+            </div>
+            <div class="product-info">
+                <h3>Court Socks</h3>
+                <span class="price">$24</span>
+                <button class="add-cart">Add to cart</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- Section 3: Geometric Divider -->
+<section class="divider" aria-hidden="true">
+    <svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+        <g class="geo-shape" data-speed="1">
+            <circle class="geo geo-orange" cx="180" cy="150" r="90"/>
+        </g>
+        <g class="geo-shape" data-speed="-1.4">
+            <rect class="geo geo-green" x="300" y="80" width="140" height="140"/>
+        </g>
+        <g class="geo-shape" data-speed="0.8">
+            <polygon class="geo geo-orange" points="540,70 620,220 460,220"/>
+        </g>
+        <g class="geo-shape" data-speed="-1.1">
+            <path class="geo geo-green" d="M640 150 A90 90 0 0 1 820 150"/>
+            <path class="geo geo-green" d="M640 150 A90 90 0 0 0 820 150"/>
+        </g>
+        <g class="geo-shape" data-speed="1.6">
+            <circle class="geo geo-orange" cx="730" cy="150" r="42"/>
+        </g>
+    </svg>
+</section>
+
+<!-- Section 4: Accordion of Color -->
+<section class="accordion-section" id="details">
+    <div class="container">
+        <div class="section-head reveal">
+            <h2>The Details</h2>
+            <p>Everything you need to know</p>
+        </div>
+        <div class="accordion reveal">
+
+            <div class="acc-item">
+                <button class="acc-trigger" aria-expanded="false">
+                    Shipping &amp; delivery
+                    <span class="acc-icon" aria-hidden="true"></span>
+                </button>
+                <div class="acc-panel">
+                    <div class="acc-panel-inner">
+                        Orders ship within two business days. Standard delivery lands in three to five days, and express options are offered at checkout for most regions.
+                    </div>
+                </div>
+            </div>
+
+            <div class="acc-item">
+                <button class="acc-trigger" aria-expanded="false">
+                    Returns &amp; exchanges
+                    <span class="acc-icon" aria-hidden="true"></span>
+                </button>
+                <div class="acc-panel">
+                    <div class="acc-panel-inner">
+                        Send anything back within 30 days for a full refund. Items should be unworn with tags attached. Exchanges for a different size are always free.
+                    </div>
+                </div>
+            </div>
+
+            <div class="acc-item">
+                <button class="acc-trigger" aria-expanded="false">
+                    Materials &amp; care
+                    <span class="acc-icon" aria-hidden="true"></span>
+                </button>
+                <div class="acc-panel">
+                    <div class="acc-panel-inner">
+                        Each piece is built from recycled and responsibly sourced fabrics. Machine wash cold, lay flat to dry, and skip the iron to keep the color sharp.
+                    </div>
+                </div>
+            </div>
+
+            <div class="acc-item">
+                <button class="acc-trigger" aria-expanded="false">
+                    Sizing &amp; fit
+                    <span class="acc-icon" aria-hidden="true"></span>
+                </button>
+                <div class="acc-panel">
+                    <div class="acc-panel-inner">
+                        Pieces run true to size with a relaxed cut. Between sizes, size down for a sharper line or stay put for room to layer. A full measurement chart sits on every product page.
+                    </div>
+                </div>
+            </div>
+
+            <div class="acc-item">
+                <button class="acc-trigger" aria-expanded="false">
+                    Payment &amp; security
+                    <span class="acc-icon" aria-hidden="true"></span>
+                </button>
+                <div class="acc-panel">
+                    <div class="acc-panel-inner">
+                        Checkout accepts all major cards, Apple Pay, and Google Pay. Every transaction runs over an encrypted connection, and card details are never stored on our servers.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Section 5: Contact + Sticker Footer -->
+<footer class="footer" id="contact">
+    <span class="sticker sticker-1">SALE</span>
+    <span class="sticker sticker-2">NEW</span>
+    <span class="sticker sticker-3">2026</span>
+    <span class="sticker sticker-4">HOT</span>
+
+    <div class="contact-wrap">
+        <p class="hero-eyebrow">Say hello</p>
+        <h2 class="contact-title">Get in touch</h2>
+        <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="email" required autocomplete="email">
+            </div>
+            <div class="field field-full">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="contact-submit">Send message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+
+    <div class="footer-meta">
+        <nav class="footer-links">
+            <a href="#catalog">Shop</a>
+            <a href="#details">Details</a>
+            <a href="#contact">About</a>
+            <a href="#">Instagram</a>
+        </nav>
+        <p class="footer-credit">
+            Design: <a href="https://www.tooplate.com" rel="nofollow noopener" target="_blank">Tooplate</a>
+            &nbsp;|&nbsp; More themes: <a href="https://templatemo.com" rel="nofollow noopener" target="_blank">TemplateMo</a>
+        </p>
+    </div>
+</footer>
+
+<script src="tooplate-2163-spectrum-script.js"></script>
+</body>
+</html>
