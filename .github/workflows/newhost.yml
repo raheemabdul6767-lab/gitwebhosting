@@ -28,6 +28,5 @@ jobs:
           username: ${{ secrets.AWS_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo mkdir -p /var/www/html
             sudo cp -r /tmp/website/* /var/www/html/
             sudo systemctl restart nginx
