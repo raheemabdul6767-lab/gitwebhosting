@@ -1,30 +1,28 @@
 name: Deploy static files into GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: 
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-
+  aws-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Clone GitHub Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.0
 
-      - name: Setup GitHub Pages
-        uses: actions/configure-pages@v5
+      - name: copy website files to nginix
+        uses: appleboy/scp-actions@v1
+        with:
+         host: ${{ secrets.HOST_IP }}
+         username: $${{ secrets.AWS_USER }}
+         key: {{ secrets.SSH_KEY }}
+         source: "./*"
+         target: "/tmp/website"
 
-      - name: Upload Files to Website
+      - name: Deploy into website
+        uses:appleboy/ssh-action@v1
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
