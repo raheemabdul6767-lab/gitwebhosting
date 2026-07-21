@@ -1,8 +1,7 @@
 name: Deploy static files into GitHub Pages
 
 on:
-  workflow_dispatch: 
-
+  workflow_dispatch:
 
 jobs:
   aws-deploy:
@@ -10,19 +9,27 @@ jobs:
 
     steps:
       - name: Clone GitHub Repository
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v4
 
-      - name: copy website files to nginix
-        uses: appleboy/scp-actions@v1
+      - name: Copy website files to Nginx
+        uses: appleboy/scp-action@v1
         with:
-         host: ${{ secrets.HOST_IP }}
-         username: $${{ secrets.AWS_USER }}
-         key: {{ secrets.SSH_KEY }}
-         source: "./*"
-         target: "/tmp/website"
+          host: ${{ secrets.HOST_IP }}
+          username: ${{ secrets.AWS_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          source: "./*"
+          target: "/tmp/website"
 
       - name: Deploy into website
-        uses:appleboy/ssh-action@v1
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.HOST_IP }}
+          username: ${{ secrets.AWS_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            echo "Deploying website..."
+
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
